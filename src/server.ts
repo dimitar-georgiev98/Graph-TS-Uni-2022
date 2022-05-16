@@ -47,6 +47,7 @@ async function startApolloServer() {
   )
 
   const schema = await getSchema();
+  
   const server = new ApolloServer({
     schema,
     plugins: [
